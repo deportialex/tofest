@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/info', function () {
+  //  return "Informacion de la pagina";
+    return view('paginas.informacion');
+});
+
+Route::get('/contacto', function () {
+  //  return "Informacion de la pagina";
+    return view('paginas.contacto');
+});
