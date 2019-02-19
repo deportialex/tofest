@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "alejandromn/tofest",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Administracion de fiestas",
     "keywords": [
         "framework",
         "laravel"
