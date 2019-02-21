@@ -73,7 +73,7 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            @yield('content') <!--Sirve para mandar a llamar al section en estte caso llamado content que esta en el home.blade-->
         </main>
     </div>
 </body>

@@ -15,21 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/informacion', function () {
-  //  return "Informacion de la pagina";
-    return view('paginas.informacion');
-});
+Route::get('/informacion', 'PaginasController@informacion');
 
-Route::get('/contacto', function () {
-    return view('paginas.contacto');
-});
+Route::get('/contacto', 'PaginasController@contacto');
 
-Route::get('/bienvenida/{nombre}/{apellido?}', function ($nombre, $apellido=null) {
-  //return view('paginas.bienvenida')->with(['nombre'=> $nombre,'apellido'=>$apellido]);
-  //return $nombre.''.$apellido;
-  return view('paginas.bienvenida',compact('nombre','apellido'))
-  ->with(['nombre_completo'=> $nombre.' '.$apellido]);
-});
+Route::get('/bienvenida/{nombre}/{apellido?}', 'PaginasController@bienvenida');
 
 Auth::routes();
 
