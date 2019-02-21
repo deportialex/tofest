@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
+@extends('layouts.app') <!--Cual es el layouts que vamos a usar-->
+
+@section('content')
 <h1>Bienvenida</h1>
 <body>
 hola
@@ -9,4 +10,4 @@ hola
 Nombre completo: {{$nombre_completo}}
 
 </body>
-</html>
+@endsection

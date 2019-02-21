@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/info', function () {
+Route::get('/informacion', function () {
   //  return "Informacion de la pagina";
     return view('paginas.informacion');
 });

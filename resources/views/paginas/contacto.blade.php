@@ -1,4 +1,5 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
+@extends('layouts.app') <!--Cual es el layouts que vamos a usar-->
+
+@section('content')
 <h1>Contacto</h1>
-</html>
+@endsection
