@@ -21,6 +21,16 @@ Route::get('/info', function () {
 });
 
 Route::get('/contacto', function () {
-  //  return "Informacion de la pagina";
     return view('paginas.contacto');
 });
+
+Route::get('/bienvenida/{nombre}/{apellido?}', function ($nombre, $apellido=null) {
+  //return view('paginas.bienvenida')->with(['nombre'=> $nombre,'apellido'=>$apellido]);
+  //return $nombre.''.$apellido;
+  return view('paginas.bienvenida',compact('nombre','apellido'))
+  ->with(['nombre_completo'=> $nombre.' '.$apellido]);
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
