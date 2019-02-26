@@ -19,7 +19,7 @@ Route::get('/informacion', 'PagesController@informacion');
 
 Route::get('/contacto', 'PagesController@contacto');
 
-Route::get('/equipo', 'PagesController@equipo');
+Route::get('/equipo', 'PagesController@equipo')->name('team');
 
 Route::get('/bienvenida/{nombre}/{apellido?}', 'PagesController@bienvenida');
 
