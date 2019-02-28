@@ -6,24 +6,33 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    public function inicio()
+    {
+      return view('paginas.inicio');
+    }
+
+    public function terrazas()
+    {
+      return view('paginas.terrazas');
+    }
+
+    public function servicios()
+    {
+      return view('paginas.servicios');
+    }
+
     public function informacion()
     {
       return view('paginas.informacion');
     }
 
-    public function contacto()
+    public function dudas()
     {
-      return view('paginas.contacto');
+      return view('paginas.dudas');
     }
 
-    public function bienvenida($nombre,$apellido = null)
+    public function carrito()
     {
-      return view('paginas.bienvenida',compact('nombre','apellido'))
-      ->with(['nombre_completo'=> $nombre.' '.$apellido]);
-    }
-
-    public function equipo()
-    {
-      return view('paginas.equipo');
+      return view('paginas.carrito');
     }
 }

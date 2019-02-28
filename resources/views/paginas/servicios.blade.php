@@ -1,6 +1,7 @@
 @extends('layouts.app') <!--Cual es el layouts que vamos a usar-->
 
 @section('content')
+<h1>Servicios</h1>
 <div class="row">
   <div class="col-8 offset-2">
     <table class="table">
