@@ -17,8 +17,10 @@ class CreateTableTerrazas extends Migration
             $table->increments('id')->unique();
             $table->string('nombre');
             $table->string('direccion');
-            $table->string('codigo social');
+            $table->string('codigo');
             $table->timestamps();
+
+            //$table->foreign('usr_id')->references('id')->on('users');
         });
     }
 
