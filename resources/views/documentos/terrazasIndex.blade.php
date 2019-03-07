@@ -3,7 +3,7 @@
 @section('content')
 <div clas="row">
   <div clas="row">
-    <h1>Terrazas</h1>
+    <h1>Terrazas de {{session('apodo')}}</h1>
     <table class="table">
       <thead>
         <tr>
