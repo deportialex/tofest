@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/iniciop', function () {
+    return view('iniciop');
+});
+
 
 
 Route::get('/terrazas', 'terrazasController@index')->name('terrazas'); //en el name no acepta terrazas.index
